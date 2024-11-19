@@ -3,7 +3,7 @@
 @use "../../styles/partials/typography" as *;
 
 .about {
-  margin: 0 1rem;
+  margin: 2rem 1rem;
   @include flex-center;
   flex-direction: column;
 

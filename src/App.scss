@@ -39,3 +39,50 @@ header {
   margin-bottom: 1rem;
   @include border-radius(8px);
 }
+
+.input__group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.btn__group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.link__group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  height: 1.6rem;
+  width: 100%;
+  padding: 1.4rem;
+  border-radius: 20px;
+  background-color: $white;
+  border: 1px solid $grey2;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1.5px solid $grey1;
+}
+
+textarea {
+  height: 4.8rem;
+}

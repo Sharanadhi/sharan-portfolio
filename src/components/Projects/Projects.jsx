@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <section className='projects'>
       <div className='projects__header'>
-          <h2 className="projects__heading">Projects</h2>
+          <h2 className="projects__heading">PROJECTS</h2>
           <hr className='underline'/>
         <Slide>
           <p className="projects__text">

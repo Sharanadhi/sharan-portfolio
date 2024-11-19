@@ -1,0 +1,37 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.contact {
+  margin: 2rem 4rem;
+  @include flex-center;
+  flex-direction: column;
+  &__header {
+    @include flex-center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  &__container {
+    @include flex-center;
+  }
+  &__card {
+    padding: 4rem;
+    width: 100%;
+    width: 44rem;
+    background-color: $white;
+    @include border-radius(24px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  &__button {
+    height: 2rem;
+    width: 6rem;
+    border: none;
+    background-color: $orange1;
+    color: $white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  &__button:hover {
+    background-color: $orange2;
+  }
+}
