@@ -1,0 +1,29 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.project {
+  @include flex-space-between;
+  margin-bottom: 1rem;
+  &__imgContainer {
+    flex: 1;
+    @include flex-center;
+  }
+  &__details {
+    flex: 1;
+  }
+  &__img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    @include border-radius(8px);
+  }
+  &__title {
+    color: $orange1;
+  }
+  &__link {
+    text-decoration: none;
+    color: $orange1;
+  }
+}

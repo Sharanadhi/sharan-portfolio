@@ -1,0 +1,16 @@
+[
+  {
+    "id":0,
+    "title":"ContactHub",
+    "description":"Contact Hub is a comprehensive CRM (Customer Relationship Management) web app designed to streamline and manage customer relationships efficiently. Whether it's managing contacts or tracking deals, Contact Hub provides all the essential tools for business growth.",
+    "img":"../../src/assets/images/contacthub.png",
+    "url":""
+  },
+  {
+    "id":1,
+    "title":"Omnifood",
+    "description":"Omnifood is a website for fictional food delivery app which uses AI to provide meal ideas. The website is created using HTML and CSS. It has a beautiful and easy to use UI. The website works responsively on desktop, tablet and mobile.",
+    "img":"../../src/assets/images/omnifood.png",
+    "url":"https://sharan-omnifood.netlify.app/"  
+  }
+]

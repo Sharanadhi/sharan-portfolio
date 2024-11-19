@@ -1,0 +1,14 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.projects {
+  margin: 0 4rem;
+  @include flex-center;
+  flex-direction: column;
+  &__header {
+    @include flex-center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
