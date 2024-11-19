@@ -14,7 +14,7 @@
 
 html,
 body {
-  background-color: $white;
+  background-color: $white1;
   color: $black1;
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
@@ -24,4 +24,5 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
