@@ -45,6 +45,11 @@
   font-weight: $weight;
 }
 
+@mixin ntr-font($weight) {
+  font-family: "NTR", serif;
+  font-weight: $weight;
+}
+
 @mixin media-query($breakpoint) {
   @if $breakpoint == "tablet" {
     @media (min-width: 768px) {
