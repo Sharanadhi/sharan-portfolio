@@ -10,12 +10,14 @@ h1 {
   @include roboto-font(900);
   font-size: 4rem;
   letter-spacing: 1.5px;
+  line-height: 2;
 }
 
 h2 {
   @include roboto-font(700);
   font-size: 3rem;
   letter-spacing: 1px;
+  line-height: 1.6;
 }
 
 h3 {
@@ -28,4 +30,5 @@ p {
   @include roboto-font(400);
   font-size: 1rem;
   letter-spacing: 0.5px;
+  line-height: 1.7;
 }

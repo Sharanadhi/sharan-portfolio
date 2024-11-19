@@ -3,16 +3,12 @@
 @use "../../styles/partials/typography" as *;
 
 .hero {
-  display: flex;
+  @include flex-center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1.2rem;
 
   &__imgContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
   }
 
   &__img {
@@ -35,9 +31,7 @@
 
   .hero__sociallinks {
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     gap: 1.2rem;
     a {
       font-size: 2rem;

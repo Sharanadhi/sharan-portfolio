@@ -26,3 +26,16 @@ body {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
+
+header {
+  height: 100vh;
+}
+
+.underline {
+  background-color: $orange1;
+  width: 22rem;
+  height: 0.15rem;
+  border: none;
+  margin-bottom: 1rem;
+  @include border-radius(8px);
+}
