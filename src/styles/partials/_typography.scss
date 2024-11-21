@@ -8,22 +8,40 @@ html {
 
 h1 {
   @include roboto-font(900);
-  font-size: 4rem;
-  letter-spacing: 1.5px;
-  line-height: 2;
+
+  font-size: 2rem;
+  letter-spacing: 1.25px;
+  line-height: 1.5;
+  @include media-query("tablet") {
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    line-height: 2;
+  }
+  @include media-query("desktop") {
+    font-size: 4rem;
+  }
 }
 
 h2 {
   @include roboto-font(700);
-  font-size: 3rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   line-height: 1.6;
+  @include media-query("tablet") {
+    font-size: 2rem;
+  }
+  @include media-query("desktop") {
+    font-size: 3rem;
+  }
 }
 
 h3 {
   @include roboto-font(300);
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: 0.5px;
+  @include media-query("tablet") {
+    font-size: 2rem;
+  }
 }
 
 p {

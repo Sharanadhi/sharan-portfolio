@@ -1,5 +1,5 @@
 
-import { FaLinkedin,FaGithub,FaSpotify } from "react-icons/fa6";
+import { FaLinkedin,FaGithub,FaSpotify,FaXTwitter,FaSquareYoutube } from "react-icons/fa6";
 import { Slide,Fade,Zoom } from "react-awesome-reveal";
 
 import './Hero.scss';
@@ -24,6 +24,8 @@ function Hero(){
           <li><a target="_blank" href="https://www.linkedin.com/in/sharan-athiyadath/"><FaLinkedin/></a></li>
           <li><a target="_blank" href="https://github.com/Sharanadhi"><FaGithub/></a></li>
           <li><a target="_blank" href="https://open.spotify.com/user/315qepx426u27kty6kxa5227dxoe?si=c8d4bc9ade6c4824"><FaSpotify/></a></li>
+          <li><a target="_blank" href="https://x.com/sharanadhi1"><FaXTwitter/></a></li>
+          <li><a target="_blank" href="https://youtube.com/@sharanadhi9196?si=zEaPk4dXBYvBKjHx"><FaSquareYoutube/></a></li>
       </Fade>
         </ul>
     </section>

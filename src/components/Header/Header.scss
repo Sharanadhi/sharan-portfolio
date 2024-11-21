@@ -3,10 +3,10 @@
 @use "../../styles/partials/typography" as *;
 
 .header {
-  // position: fixed;
+  position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #fff;
+  // background: #fff;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 
   &__content {
@@ -59,7 +59,7 @@
     background: #fff;
     position: absolute;
     width: 100%;
-    top: 10%;
+    top: 100%;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s;
