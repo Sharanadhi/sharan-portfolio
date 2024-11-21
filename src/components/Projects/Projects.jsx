@@ -9,7 +9,7 @@ const Projects = () => {
   ));
   
   return (
-    <section className='projects'>
+    <section id="projects" className='projects'>
       <div className='projects__header'>
           <h2 className="projects__heading">PROJECTS</h2>
           <hr className='underline'/>

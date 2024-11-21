@@ -26,11 +26,6 @@ function Hero(){
           <li><a target="_blank" href="https://open.spotify.com/user/315qepx426u27kty6kxa5227dxoe?si=c8d4bc9ade6c4824"><FaSpotify/></a></li>
       </Fade>
         </ul>
-      <div className="scroll-down">
-        <span></span>
-        <span></span>
-        <span></span>
-     </div>
     </section>
   )
 }

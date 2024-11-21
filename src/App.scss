@@ -25,10 +25,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-}
-
-header {
-  height: 100vh;
+  position: relative;
 }
 
 .underline {
@@ -85,4 +82,8 @@ select:focus {
 
 textarea {
   height: 4.8rem;
+}
+
+.d-none {
+  display: none;
 }

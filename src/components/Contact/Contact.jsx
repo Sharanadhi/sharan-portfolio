@@ -3,7 +3,7 @@ import './Contact.scss';
 
 const Contact = ()=> {
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <div className='contact__header'>
           <h2 className="contact__heading">CONTACT</h2>
           <hr className='underline'/>
@@ -18,16 +18,16 @@ const Contact = ()=> {
           <div className="contact__card-body">
             <form action="">
             <div className="input__group">
-              <label htmlFor="">Name</label>
-              <input type="text" className="contact__input"/>
+              <label htmlFor="contact_name">Name</label>
+              <input type="text" className="contact__input" id="contact_name"/>
             </div>
             <div className="input__group">
-              <label htmlFor="">Email</label>
-              <input type="email" className="contact__input"/>
+              <label htmlFor="contact_email">Email</label>
+              <input type="email" className="contact__input" id="contact_email"/>
             </div>
             <div className="input__group">
-              <label htmlFor="">Message</label>
-              <textarea name="message" id="message"></textarea>
+              <label htmlFor="contact_message">Message</label>
+              <textarea name="message" id="contact_message"></textarea>
             </div>
             <div className="btn__group">
               <button className="contact__button">Submit</button>

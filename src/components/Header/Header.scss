@@ -1,0 +1,92 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.header {
+  // position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+  }
+
+  &__logo-container {
+    @include flex-center;
+    gap: 0.5rem;
+  }
+
+  &__logo-title {
+    @include ntr-font(400);
+    font-size: 1.8rem;
+  }
+
+  &__links {
+    display: none;
+    @include media-query("tablet") {
+      list-style: none;
+      @include flex-space-between;
+    }
+  }
+
+  &__link {
+    padding: 0 1rem;
+    text-decoration: none;
+    @include ntr-font(400);
+    font-size: 1.6rem;
+    color: $blue1;
+  }
+
+  &__main-ham-menu-cont {
+    @include media-query("tablet") {
+      display: none;
+    }
+  }
+
+  &__main-ham-menu {
+    display: block;
+    @include media-query("tablet") {
+      display: none;
+    }
+  }
+
+  &__sm-menu {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 999; /* Ensure it's above other elements */
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__sm-menu--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__sm-menu-link {
+    list-style: none;
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 2.5rem 3rem;
+      font-size: 1.6rem;
+      color: #333;
+      text-align: right;
+      border-bottom: 1px solid #eee;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: color 0.3s;
+    }
+  }
+}
