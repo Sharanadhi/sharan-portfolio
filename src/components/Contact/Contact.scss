@@ -3,7 +3,7 @@
 @use "../../styles/partials/typography" as *;
 
 .contact {
-  margin: 2rem 4rem;
+  margin: 2rem;
   @include flex-center;
   flex-direction: column;
   &__header {
@@ -15,9 +15,9 @@
     @include flex-center;
   }
   &__card {
-    padding: 4rem;
+    padding: 2rem;
     width: 100%;
-    width: 44rem;
+    width: 100%;
     background-color: $white;
     @include border-radius(24px);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

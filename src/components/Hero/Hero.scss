@@ -4,7 +4,8 @@
 
 .hero {
   height: 100vh;
-  padding: 2rem 4rem;
+  // width: 100%;
+  padding: 2rem;
   @include flex-center;
   flex-direction: column;
   gap: 1.2rem;
@@ -15,9 +16,9 @@
   }
 
   &__img {
+    height: auto;
     width: 100%;
     max-width: 12.5rem;
-    height: auto;
     border-radius: 50%;
     border-bottom: 3px solid $orange1;
   }
@@ -35,6 +36,7 @@
 
   .hero__sociallinks {
     list-style-type: none;
+    padding: 0px;
     @include flex-center;
     gap: 1.2rem;
     a {
