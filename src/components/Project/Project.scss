@@ -3,8 +3,12 @@
 @use "../../styles/partials/typography" as *;
 
 .project {
-  @include flex-space-between;
   margin-bottom: 1rem;
+  @include flex-space-between;
+  flex-direction: column-reverse;
+  @include media-query("tablet") {
+    flex-direction: row;
+  }
   &__imgContainer {
     flex: 1;
     @include flex-center;
@@ -21,6 +25,10 @@
   }
   &__title {
     color: $orange1;
+    text-align: center;
+    @include media-query("tablet") {
+      text-align: left;
+    }
   }
   &__link {
     text-decoration: none;

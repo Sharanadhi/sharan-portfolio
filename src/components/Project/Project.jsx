@@ -12,8 +12,8 @@ function Project({data}){
       </div>
       <div className='project__details'>
        <Fade delay={1000}>
-       {!data.url && <h3 className='project__title'>{data.title}</h3>}
-       {data.url && <h3 className='project__title'><a href={data.url} target="_blank" className="project__link">{data.title}</a></h3>}
+       {!data.url && <h2 className='project__title'>{data.title}</h2>}
+       {data.url && <h2 className='project__title'><a href={data.url} target="_blank" className="project__link">{data.title}</a></h2>}
          <p className='project__text'>{data.description}</p>
        </Fade>
       </div>
