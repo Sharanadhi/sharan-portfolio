@@ -3,13 +3,15 @@
 @use "../../styles/partials/typography" as *;
 
 .hero {
-  height: 100vh;
+  height: 80vh;
   padding: 2rem;
   @include flex-center;
   flex-direction: column;
   gap: 1.2rem;
   flex-wrap: wrap;
-
+  @include media-query("tablet") {
+    height: 100vh;
+  }
   &__imgContainer {
     @include flex-center;
   }

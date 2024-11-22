@@ -3,10 +3,10 @@
 @use "../../styles/partials/typography" as *;
 
 .about {
-  margin: 2rem;
+  padding: 2rem;
+  width: 100%;
   @include flex-center;
   flex-direction: column;
-
   &__header {
     @include flex-center;
     flex-direction: column;
@@ -15,13 +15,23 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 1.2rem;
+    flex-direction: column;
+    @include media-query("desktop") {
+      flex-direction: row;
+      gap: 1.2rem;
+    }
   }
   &__content {
     flex: 1;
-    padding: 3rem;
+    padding: 1rem 2rem;
     @include flex-center;
     flex-direction: column;
+    @include media-query("tablet") {
+      padding: 2rem;
+    }
+    @include media-query("desktop") {
+      padding: 3rem;
+    }
     &-heading,
     &-text {
       margin-bottom: 1rem;
@@ -29,9 +39,15 @@
   }
   &__skills {
     flex: 1;
-    padding: 3rem;
+    padding: 1rem 2rem;
     @include flex-center;
     flex-direction: column;
+    @include media-query("tablet") {
+      padding: 2rem;
+    }
+    @include media-query("desktop") {
+      padding: 3rem;
+    }
     &-heading {
       margin-bottom: 1rem;
     }
