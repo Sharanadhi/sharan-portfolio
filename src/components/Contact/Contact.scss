@@ -35,4 +35,8 @@
   &__button:hover {
     background-color: $orange2;
   }
+  .error {
+    color: red;
+    font-size: 0.875rem;
+  }
 }
